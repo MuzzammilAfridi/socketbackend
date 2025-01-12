@@ -25,6 +25,10 @@ io.on('connection', (socket) => {
   });
 });
 
+app.get("/", (req, res)=>{
+  res.send("Hiii How are YOu")
+})
+
 // POST endpoint to send notifications
 app.post('/send', (req, res) => {
   const message = req.body.message;
